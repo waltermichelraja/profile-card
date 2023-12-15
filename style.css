@@ -49,6 +49,7 @@ body{
   .card-content h3{
     font-size: 25px;
     text-align: center;
+    padding-top: 5px;
     margin: 0;
   }
   
