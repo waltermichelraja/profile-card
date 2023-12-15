@@ -5,14 +5,14 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
-    background: #eee;
+    background: #646464;
   }
   
   .card{
     font-family: "Candara", sans-serif;
     width: 340px;
     overflow: hidden;
-    background: #fff;
+    background: #d6d6d6;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -37,7 +37,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     border-radius: 100px;
-    border: 10px solid #fff;
+    border: 10px solid #d6d6d6;
     transition-duration: 0.4s;
     transition-property: transform;
   }
