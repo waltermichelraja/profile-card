@@ -1,34 +1,208 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio: Walter</title>
-    <link rel="icon" type="image/x-icon" href="media\profile-image-title.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walter Michel Raja</title>
+  <link rel="icon" type="image/x-icon" href="media/profile-image-title.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <!--Profile card start-->
-    <div class="card">
-      <div class="card-image">
-        <img src="media\card-image.png" alt="">
+  <div class="grain"></div>
+
+  <!-- ── HEADER ── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <img src="media/profile-image.png" alt="Walter" class="avatar">
+        <div class="header-title">
+          <h1 class="name">Walter Michel Raja</h1>
+          <p class="tagline">technophile &nbsp;·&nbsp; py developer &nbsp;·&nbsp; cricket enthusiast</p>
+        </div>
       </div>
-      <div class="profile-image">
-        <img src="media\profile-image.png" alt="">
-      </div>
-      <div class="card-content">
-        <h3>Walter</h3>
-        <p>technophile | py developer | cricket enthusiast</p>
-      </div>
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/waltermichelraja/" target="_blank" class="fa-brands fa-linkedin"></a>
-        <a href="https://github.com/waltermichelraja" target="_blank" class="fa-brands fa-github"></a>
-        <a href="https://www.instagram.com/waltermichelraja/" target="_blank" class="fa-brands fa-instagram"></a>
+      <div class="header-right">
+        <a href="mailto:waltermichelraja@gmail.com" class="contact-link">
+          <i class="fa-solid fa-envelope"></i>
+          <span>waltermichelraja@gmail.com</span>
+        </a>
+        <a href="tel:+919150217727" class="contact-link">
+          <i class="fa-solid fa-phone"></i>
+          <span>+91 91502 17727</span>
+        </a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/waltermichelraja/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/waltermichelraja" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/waltermichelraja/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
       </div>
     </div>
-    <!--Profile card end-->
+  </header>
 
-  </body>
+  <!-- ── MAIN ── -->
+  <main class="content">
+
+    <!-- ABOUT -->
+    <section class="section reveal">
+      <h2 class="section-label">about</h2>
+      <p class="about-body">
+        Innovative and adaptable Software Developer proficient in diverse technologies,
+        delivering creative solutions to complex problems. Committed to enhancing
+        efficiency, usability, and functionality in projects while maintaining a
+        high standard of quality.
+      </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- EDUCATION -->
+    <section class="section reveal">
+      <h2 class="section-label">education</h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <span class="edu-period">2024 — present</span>
+          <p class="edu-school">Sri Krishna College of Engineering and Technology</p>
+          <p class="edu-detail">B.E. &nbsp;·&nbsp; Coimbatore</p>
+        </div>
+        <div class="edu-card">
+          <span class="edu-period">2016 — 2024</span>
+          <p class="edu-school">Comorin International School, Nagercoil</p>
+          <p class="edu-detail">HSC &nbsp;·&nbsp; 93%</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- EXPERTISE -->
+    <section class="section reveal">
+      <h2 class="section-label">expertise</h2>
+      <div class="expertise-grid">
+        <div class="ex-group">
+          <p class="ex-label">Backend</p>
+          <div class="ex-tags">
+            <span class="tag">Flask</span>
+            <span class="tag">Django</span>
+            <span class="tag">Spring Boot</span>
+          </div>
+        </div>
+        <div class="ex-group">
+          <p class="ex-label">Languages</p>
+          <div class="ex-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">C++</span>
+          </div>
+        </div>
+        <div class="ex-group">
+          <p class="ex-label">Tooling</p>
+          <div class="ex-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">PyPI</span>
+          </div>
+        </div>
+        <div class="ex-group">
+          <p class="ex-label">Web</p>
+          <div class="ex-tags">
+            <span class="tag">Web Dev</span>
+            <span class="tag">REST API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROJECTS -->
+    <section class="section reveal">
+      <h2 class="section-label">projects</h2>
+      <ul class="project-list">
+        <li class="project-row">
+          <div class="project-left">
+            <span class="project-name">mercurytools</span>
+            <span class="project-desc">A module on PyPI implementing typical Data Structures.</span>
+          </div>
+          <span class="project-stack">Python · PyPI</span>
+        </li>
+        <li class="project-row">
+          <div class="project-left">
+            <span class="project-name">chem-boy</span>
+            <span class="project-desc">Chemical Equation Balancer using numpy, sympy &amp; re.</span>
+          </div>
+          <span class="project-stack">Python · numpy · sympy</span>
+        </li>
+        <li class="project-row">
+          <div class="project-left">
+            <span class="project-name">willowreign</span>
+            <span class="project-desc">Command-line Hand Cricket Simulation for enthusiasts.</span>
+          </div>
+          <span class="project-stack">Java · CLI</span>
+        </li>
+        <li class="project-row">
+          <div class="project-left">
+            <span class="project-name">twilight-discord-client</span>
+            <span class="project-desc">A Discord bot built on the discord.py API.</span>
+          </div>
+          <span class="project-stack">Python · discord.py</span>
+        </li>
+        <li class="project-row">
+          <div class="project-left">
+            <span class="project-name">wea-wiz</span>
+            <span class="project-desc">Weather web app powered by the OpenWeather API.</span>
+          </div>
+          <span class="project-stack">Python · Flask</span>
+        </li>
+        <li class="project-row">
+          <div class="project-left">
+            <span class="project-name">bluestock-ipo</span>
+            <span class="project-desc">Complete REST API built for the Bluestock internship.</span>
+          </div>
+          <span class="project-stack">Python · Django</span>
+        </li>
+      </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- OSS -->
+    <section class="section reveal">
+      <h2 class="section-label">oss contributions</h2>
+      <ul class="project-list">
+        <li class="project-row">
+          <div class="project-left">
+            <span class="project-name">global-solar-forecast</span>
+            <span class="project-desc">Solar capacity forecast &amp; dashboard — Open Climate Fix.</span>
+          </div>
+          <span class="project-stack">Open Climate Fix</span>
+        </li>
+        <li class="project-row">
+          <div class="project-left">
+            <span class="project-name">opentrace</span>
+            <span class="project-desc">Lightweight Java library recording structured execution spans.</span>
+          </div>
+          <span class="project-stack">Java · Library</span>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>Walter Michel Raja &nbsp;·&nbsp; Nagercoil, India</span>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+
+</body>
 </html>
