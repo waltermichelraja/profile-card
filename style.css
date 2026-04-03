@@ -1,4 +1,3 @@
-/* ── Variables ── */
 :root {
   --bg:       #0c0c0c;
   --surface:  #131313;
@@ -11,11 +10,9 @@
   --serif:    "Fraunces", serif;
 }
 
-/* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
-/* ── Grain ── */
 .grain {
   pointer-events: none;
   position: fixed;
@@ -26,7 +23,6 @@ html { scroll-behavior: smooth; }
   background-size: 180px;
 }
 
-/* ── Body ── */
 body {
   background: var(--bg);
   color: var(--text);
@@ -38,9 +34,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ════════════════════════════
-   HEADER
-════════════════════════════ */
 .site-header {
   border-bottom: 1px solid var(--border);
   padding: 32px 0 0;
@@ -63,7 +56,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Left: avatar + name */
 .header-left {
   display: flex;
   align-items: center;
@@ -101,7 +93,6 @@ body {
   letter-spacing: 0.2px;
 }
 
-/* Right: contact + socials */
 .header-right {
   display: flex;
   flex-direction: column;
@@ -146,16 +137,12 @@ body {
   transform: translateY(-2px);
 }
 
-/* ════════════════════════════
-   CONTENT
-════════════════════════════ */
 .content {
   max-width: 860px;
   margin: 0 auto;
   padding: 64px 40px 80px;
 }
 
-/* ── Section ── */
 .section {
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -175,14 +162,12 @@ body {
   top: 105px;
 }
 
-/* ── Divider ── */
 .divider {
   border: none;
   border-top: 1px solid var(--border);
   margin: 48px 0;
 }
 
-/* ── About ── */
 .about-body {
   font-size: 13.5px;
   color: var(--text);
@@ -191,11 +176,10 @@ body {
   max-width: 560px;
 }
 
-/* ── Education ── */
 .edu-grid {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 28px;
 }
 
 .edu-card { display: flex; flex-direction: column; gap: 3px; }
@@ -219,7 +203,14 @@ body {
   color: var(--muted);
 }
 
-/* ── Expertise ── */
+.edu-desc {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-top: 6px;
+  max-width: 520px;
+}
+
 .expertise-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -260,26 +251,33 @@ body {
   background: rgba(200, 245, 66, 0.04);
 }
 
-/* ── Projects & OSS ── */
 .project-list {
   list-style: none;
   width: 100%;
 }
 
 .project-row {
+  border-bottom: 1px solid var(--border);
+  transition: padding-left 0.25s ease;
+}
+
+.project-row:first-child .project-link { padding-top: 0; }
+.project-row:last-child {
+  border-bottom: none;
+}
+.project-row:last-child .project-link { padding-bottom: 0; }
+
+.project-row:hover { padding-left: 6px; }
+
+.project-link {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 16px;
   padding: 13px 0;
-  border-bottom: 1px solid var(--border);
-  transition: padding-left 0.25s ease;
+  text-decoration: none;
+  color: inherit;
 }
-
-.project-row:first-child { padding-top: 0; }
-.project-row:last-child  { border-bottom: none; padding-bottom: 0; }
-
-.project-row:hover { padding-left: 6px; }
 
 .project-left {
   display: flex;
@@ -294,7 +292,19 @@ body {
   font-weight: 500;
   color: #e4e4e4;
   white-space: nowrap;
+  transition: color 0.2s;
 }
+
+.project-icon {
+  font-size: 9px;
+  opacity: 0;
+  margin-left: 5px;
+  transition: opacity 0.2s, color 0.2s;
+  vertical-align: middle;
+}
+
+.project-link:hover .project-name { color: var(--accent); }
+.project-link:hover .project-icon { opacity: 1; color: var(--accent); }
 
 .project-desc {
   font-size: 11.5px;
@@ -311,9 +321,6 @@ body {
   text-align: right;
 }
 
-/* ════════════════════════════
-   FOOTER
-════════════════════════════ */
 .site-footer {
   max-width: 860px;
   margin: 0 auto;
@@ -326,9 +333,6 @@ body {
   color: var(--dim);
 }
 
-/* ════════════════════════════
-   SCROLL REVEAL
-════════════════════════════ */
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -340,9 +344,6 @@ body {
   transform: translateY(0);
 }
 
-/* ════════════════════════════
-   RESPONSIVE
-════════════════════════════ */
 @media (max-width: 680px) {
   .header-inner {
     padding: 0 20px 20px;
